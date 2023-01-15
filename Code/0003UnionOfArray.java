@@ -2,7 +2,7 @@
     
     Problem Statement
     -----------------
-    Given two Array and find the set of that array.
+    Given two Array set1 and set2, find the union of the both set.
     
     Time Complexity  : 
     Space Complexity :
