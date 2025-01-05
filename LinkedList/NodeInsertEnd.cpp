@@ -36,7 +36,7 @@ Node* insertLast(Node* head, int x){
     Node *current=head;
     //Handled the base case if head is NULL return the temp as head
     if(head==NULL)
-     return  temp
+     return  temp;
      //If linked lis is not empty
        while(current->next!=NULL)
          current=current->next;
