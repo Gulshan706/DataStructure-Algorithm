@@ -41,3 +41,13 @@ Node* deleteBegin(Node* head){
          return head;
 
 }
+Node* deleteHead(Node* head){
+    //Handled the base case if head is NULL return the temp as head
+    if(head==NULL){
+     return  NULL;
+    }else{
+        //If linked lis is not empty
+       Node* temp= head->next;
+       delete(head);
+    return temp;
+    }
