@@ -17,7 +17,8 @@ Reverse the given linked list
 	    return previous;
 	    
 	}
-	
+/************************************************************/
+
 	public static Node reverseLinkedListRec(Node head){
 	    if(head==null || head.next==null)
 	       return head;
@@ -28,5 +29,17 @@ Reverse the given linked list
 	         head.next=null;
 	         return newHead;
 	       
+	    
+	}
+
+/**************************************************************/
+
+       	public static Node reverseRec(Node head , Node pre){
+	    
+	    if(head==null)
+	     return pre;
+	    Node next = head.next;
+	    head.next =pre;
+	    return  reverseRec(next,head);
 	    
 	}
